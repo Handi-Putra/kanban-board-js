@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="drag.js" defer></script>
+    <script src="todo.js" defer></script>
+</head>
+<body>
+    <div class="board">
+        <form id="todo-form">
+            <input type="text" placeholder="New To Do..." id="todo-input">
+            <button type="submit">Add +</button>
+        </form>
+
+        <div class="lanes">
+            <div class="swim-lane" id="todo-lane">
+                <h3 class="heading">To Do</h3>
+
+                <p class="task" draggable="true">Create Carousel</p>
+                <p class="task" draggable="true">Build API for Carousel</p>
+                <p class="task" draggable="true">SSL</p>
+            </div>
+
+            <div class="swim-lane" style="background-color: rgb(243, 243, 149);">
+                <h3 class="heading">Doing</h3>
+
+                <p class="task" draggable="true">SIT/UAT Carousel</p>
+            </div>
+
+            <div class="swim-lane" style="background-color: rgb(164, 245, 164);">
+                <h3 class="heading">Done</h3>
+
+                <p class="task" draggable="true">Deployed Carousel</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
